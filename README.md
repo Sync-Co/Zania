@@ -32,19 +32,24 @@ A simple React application that displays a set of document types as draggable ca
 
   Note: Make sure Docker is up and running in local
 - docker-compose up --build 
-  [wait for 1-2 mins for the build until we see : frontend  | webpack compiled successfully]
+  [wait for 1-2 mins for the build until we see : frontend  | webpack compiled ...]
 
 -  The application initializes the database and inserts default data on startup. We can connect to the   docker container to check the data.
   In a terminal
   - List Running Containers
+    
     docker ps (to check the running containers)
   - Connect to the PostgreSQL Container
+    
     docker exec -it db psql -U postgres
-  - Connect to the Database  
+  - Connect to the Database
+      
     \c document_db;
   - Check Tables
+    
     \dt
   - Query Data
+    
     select * from documents;
 
 ### Access to APP
