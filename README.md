@@ -29,7 +29,8 @@ A simple React application that displays a set of document types as draggable ca
 ### Run the APP
 - cd Zania/frontend
 - npm install
-Note: Make sure Docker is up and running in local
+
+  Note: Make sure Docker is up and running in local
 - docker-compose up --build 
   [wait for 1-2 mins for the build until we see : frontend  | webpack compiled successfully]
 
