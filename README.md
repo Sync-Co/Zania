@@ -24,9 +24,36 @@ A simple React application that displays a set of document types as draggable ca
 
 1. **Clone the repository:**
 
-   ```bash
-   git clone https://github.com/yourusername/document-dashboard.git
-   cd document-dashboard
+   git clone https://github.com/Sync-Co/Zania.git
+
+### Run the APP
+- cd Zania
+Note: Make sure Docker is up and running in local
+- docker-compose up --build 
+  [wait for 1-2 mins for the build until we see : frontend  | webpack compiled successfully]
+
+-  The application initializes the database and inserts default data on startup. We can connect to the   docker container to check the data.
+  In a terminal
+  - List Running Containers
+    docker ps (to check the running containers)
+  - Connect to the PostgreSQL Container
+    docker exec -it db psql -U postgres
+  - Connect to the Database  
+    \c document_db;
+  - Check Tables
+    \dt
+  - Query Data
+    select * from documents;
+
+### Access to APP
+- Open http://localhost:3000/ to access the app locally.
+- Play with the cards (click , Drag and Drop)
+
+Note: In the PostgreSQL we can see the updated positions.
+
+### Check in the postgres DB for change in positions
+
+
 
 
 **Thought Process**
