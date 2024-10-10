@@ -1,0 +1,6 @@
+# Node.js dependencies
+frontend/node_modules/
+
+# Python dependencies
+backend/__pycache__/s
+backend/venv
